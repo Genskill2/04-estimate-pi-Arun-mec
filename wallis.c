@@ -23,4 +23,13 @@ int main(void) {
     }
   }
 }
-
+float wallis_pi(int a){
+	int j;
+	float temp,p=1;
+	for(j=1;j<a;j++)
+	{
+		temp=4*j*j;
+		p=p*(temp/(temp-1));
+	}
+	return 2*p;
+}
